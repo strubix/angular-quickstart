@@ -10,7 +10,7 @@ Dependencies are saved in bower.json file. You'll need bower to initialize it.
 
 ### Installing
 
-`git clone git@github.com:strubix/angular-quickstart.git` <br /><br />
+`git clone https://github.com/strubix/angular-quickstart.git` <br /><br />
 `cd angular-quickstart && bower install` <br /><br />
 Feel free to rename the generated folder !
 
