@@ -1,4 +1,4 @@
-# angular-quickstart v1.0
+# angular-quickstart v2.0
 
 This repository provides you an easy ready-to-use Angular app. 
 
@@ -20,7 +20,9 @@ Feel free to rename the generated folder !
 * angular-ui-router
 
 # History
->**02/08/2016 :** Version 1.0 ready
+>**02/08/2016 :** Version 1.0 ready <br>
+
+>**09/08/2016 :** Version 2.0 using Angular components
 
 ## License
 
