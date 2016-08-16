@@ -21,8 +21,9 @@ Feel free to rename the generated folder !
 * angular-ui-router
 
 # History
->**02/08/2016 :** Version 1.0
->**17/08/2016 :** Version 2.0
+>**02/08/2016 :** Version 1.0 ready <br>
+
+>**09/08/2016 :** Version 2.0 using Angular components
 
 ## License
 
