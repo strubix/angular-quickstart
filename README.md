@@ -1,4 +1,4 @@
-# angular-quickstart v1.0
+# angular-quickstart v2.0
 
 This repository provides you an easy ready-to-use Angular app. 
 
@@ -6,12 +6,13 @@ This repository provides you an easy ready-to-use Angular app.
 
 ### Prerequisities
 
-Dependencies are saved in bower.json file. You'll need bower to initialize it.
+Front dependencies are saved in bower.json file. You'll need bower to initialize it.
+Webpack dependencies are saved in package.json file. You'll need npm to initialize it.
 
 ### Installing
 
 `git clone https://github.com/strubix/angular-quickstart.git` <br /><br />
-`cd angular-quickstart && bower install` <br /><br />
+`cd angular-quickstart && bower install && npm install` <br /><br />
 Feel free to rename the generated folder !
 
 ## Dependencies
@@ -20,7 +21,8 @@ Feel free to rename the generated folder !
 * angular-ui-router
 
 # History
->**02/08/2016 :** Version 1.0 ready
+>**02/08/2016 :** Version 1.0
+>**17/08/2016 :** Version 2.0
 
 ## License
 

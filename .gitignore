@@ -1,3 +1,5 @@
 .gitignore
 bower_components
 .idea
+angular-quickstart.iml
+node_modules

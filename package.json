@@ -1,0 +1,32 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "This repository provides you an easy ready-to-use Angular app.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strubix/angular-quickstart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strubix/angular-quickstart/issues"
+  },
+  "homepage": "https://github.com/strubix/angular-quickstart#readme",
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-2": "^6.13.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "extract-text-webpack-plugin": "^1.0.1"
+  }
+}
