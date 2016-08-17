@@ -1,5 +1,4 @@
-import components from './components';
-// import services from './services';
-// import constants from './constants';
+import components from './app.components';
+import routes from './app.routes';
 
-angular.module('app', [components]);
+angular.module('app', [components, routes]);
