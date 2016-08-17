@@ -1,8 +1,8 @@
-import controller from './controller';
+import controller from './home.controller';
 // import template from './template.html';
 
 export default {
-  templateUrl: 'components/home/template.html',
+  templateUrl: 'components/home/home.template.html',
   controller: controller,
   controllerAs: 'vm',
   bindings: {},

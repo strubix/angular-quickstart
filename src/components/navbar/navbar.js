@@ -1,8 +1,8 @@
-import controller from './controller';
+import controller from './navbar.controller';
 // import template from './template.html';
 
 export default {
-  templateUrl: 'components/navbar/template.html',
+  templateUrl: 'components/navbar/navbar.template.html',
   controller: controller,
   controllerAs: 'vm',
   bindings: {},

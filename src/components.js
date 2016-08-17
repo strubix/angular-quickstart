@@ -1,10 +1,11 @@
 import Home from './components/home/home';
 import Navbar from './components/navbar/navbar';
 
-angular
-    .module('app', [])
+const components = 'app.components';
+
+angular.module(components, [])
     .component('home', Home)
     .component('navbar', Navbar)
 ;
 
-export default app;
+export default components;

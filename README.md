@@ -25,6 +25,8 @@ Feel free to rename the generated folder !
 
 >**09/08/2016 :** Version 2.0 using Angular components
 
+>**17/08/2016 :** Version 2.1 fixing compiling bugs
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
