@@ -19,11 +19,13 @@ Feel free to rename the generated folder !
 
 * angular
 * angular-ui-router
+* bootstrap
+* jquery
 
 # History
 >**02/08/2016 :** Version 1.0 ready <br>
 
->**09/08/2016 :** Version 2.0 using Angular components
+>**09/08/2016 :** Version 2.0 using Angular components, bootstrap
 
 >**17/08/2016 :** Version 2.1 fixing compiling bugs, adding ui-router
 
