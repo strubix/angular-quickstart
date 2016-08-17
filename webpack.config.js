@@ -1,15 +1,20 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var extractCSS = new ExtractTextPlugin('bundle.css');
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
+  resolve: {
+    extensions: ['', '.js', '.css'],
+    fallback: [path.join(__dirname, '../node_modules')],
+  },
   entry: {
     app: ['./src/app.js']
   },
   output: {
-      path: __dirname + '/dist',
-      filename: 'bundle.js',
-      publicPath: '/dist/',
+    path: __dirname + '/dist',
+    filename: 'bundle.js',
+    publicPath: '/dist/',
   },
   module: {
     loaders: [
@@ -28,9 +33,9 @@ module.exports = {
     ]
   },
   plugins: [
-      extractCSS,
-      new webpack.optimize.UglifyJsPlugin({
-        comments: false
-      })
+    extractCSS,
+    new webpack.optimize.UglifyJsPlugin({
+      comments: false
+    })
   ]
 };
