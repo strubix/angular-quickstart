@@ -6,15 +6,15 @@ var path = require('path');
 module.exports = {
   resolve: {
     extensions: ['', '.js', '.css'],
-    fallback: [path.join(__dirname, '../node_modules')],
+    fallback: [path.join(__dirname, 'node_modules/')],
   },
   entry: {
-    app: ['./src/app.js']
+    app: [path.join(__dirname, 'src/app.js')]
   },
   output: {
-    path: __dirname + '/dist',
+    path: path.join(__dirname + 'dist/'),
     filename: 'bundle.js',
-    publicPath: '/dist/',
+    publicPath: path.join(__dirname + 'src/'),
   },
   module: {
     loaders: [
