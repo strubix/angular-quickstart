@@ -1,3 +1,5 @@
+import angular from 'angular';
+
 const routes = 'app.routes';
 
 angular.module(routes, ['ui.router'])

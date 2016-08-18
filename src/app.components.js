@@ -1,3 +1,4 @@
+import angular from 'angular';
 import Home from './components/home/home';
 import Navbar from './components/navbar/navbar';
 

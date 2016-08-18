@@ -1,3 +1,5 @@
+import angular from 'angular';
+
 // import Servicename from './service/servicename'
 angular
     .module('app', [])

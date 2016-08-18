@@ -6,8 +6,9 @@ This repository provides you an easy ready-to-use Angular app.
 
 ### Prerequisities
 
-Front dependencies are saved in bower.json file. You'll need bower to initialize it.
-Webpack dependencies are saved in package.json file. You'll need npm to initialize it.
+Front dependencies are saved in package.json file.
+Webpack dependencies are saved in package.json file.
+You'll need npm to initialize it.
 
 ### Installing
 
