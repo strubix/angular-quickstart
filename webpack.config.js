@@ -1,15 +1,24 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var extractCSS = new ExtractTextPlugin('bundle.css');
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
+  resolve: {
+    extensions: ['', '.js', '.css'],
+    fallback: [path.join(__dirname, 'node_modules/')]
+  },
   entry: {
-    app: ['./src/app.js']
+    app: [
+      path.join(__dirname, 'src/app.js'),
+      path.join(__dirname, 'src/app.css')
+    ]
   },
   output: {
-      path: __dirname + '/dist',
-      filename: 'bundle.js',
-      publicPath: '/dist/',
+    path: path.join(__dirname, 'dist/'),
+    filename: 'bundle.js',
+    publicPath: '',
   },
   module: {
     loaders: [
@@ -24,13 +33,26 @@ module.exports = {
       {
         test: /\.css$/,
         loader: extractCSS.extract(['css'])
-      }
+      },
+      {
+        test: /\.(mp4|mp3|avi|png|jpg|gif|svg|woff2?|eot|ttf)(\?.*)?$/,
+        loader: 'file',
+        query: {
+          limit: 10000,
+          name: 'assets/[name].[ext]'
+        },
+      },
     ]
   },
   plugins: [
-      extractCSS,
-      new webpack.optimize.UglifyJsPlugin({
-        comments: false
-      })
+    extractCSS,
+    new webpack.optimize.UglifyJsPlugin({
+      comments: false,
+      compress: { warnings: false }
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src/index.html'),
+      inject: false
+    })
   ]
 };

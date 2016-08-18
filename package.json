@@ -1,10 +1,11 @@
 {
-  "name": "test",
+  "name": "angular-quickstart",
   "version": "1.0.0",
   "description": "This repository provides you an easy ready-to-use Angular app.",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ./node_modules/webpack/bin/webpack.js",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base src/"
   },
   "repository": {
     "type": "git",
@@ -23,10 +24,16 @@
     "babel-preset-stage-2": "^6.13.0",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.22.0",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "extract-text-webpack-plugin": "^1.0.1"
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^2.2.4"
   }
 }
