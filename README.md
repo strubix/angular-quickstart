@@ -7,7 +7,9 @@ This repository provides you an easy ready-to-use Angular app.
 ### Prerequisities
 
 Front dependencies are saved in package.json file.
+
 Webpack dependencies are saved in package.json file.
+
 You'll need npm to initialize it.
 
 ### Installing
