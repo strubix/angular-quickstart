@@ -1,10 +1,10 @@
 import angular from 'angular';
-import example from './services/example.service'
+import ExampleService from './services/example.service'
 
 const services = 'app.services';
 
 angular.module(services, [])
-    .factory('example', example)
+    .service('ExampleService', ExampleService)
 ;
 
 export default services;

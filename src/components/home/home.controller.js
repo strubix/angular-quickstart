@@ -1,6 +1,6 @@
-export default class Home {
-  constructor(){
-    this.message = 'toto';
+export default class HomeController {
+  constructor(ExampleService){
+    this.message = ExampleService.test();
   }
 }
-// Home.$inject = ['example'];
+HomeController.$inject = ['ExampleService'];

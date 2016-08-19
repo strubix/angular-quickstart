@@ -1,8 +1,8 @@
-export default class example {
+export default class ExampleService {
   constructor() {
   }
 
-  add() {
+  test() {
     return "Service function !";
   }
 }
