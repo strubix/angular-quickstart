@@ -1,5 +1,6 @@
-function Home (){
-  this.message = 'test';
+export default class Home {
+  constructor(){
+    this.message = 'toto';
+  }
 }
-
-export default Home;
+// Home.$inject = ['example'];

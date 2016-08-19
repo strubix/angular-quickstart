@@ -4,5 +4,6 @@ import './vendor';
 
 import components from './app.components';
 import routes from './app.routes';
+import services from './app.services';
 
-angular.module('app', [router, components, routes]);
+angular.module('app', [router, components, routes, services]);
