@@ -1,5 +1,5 @@
 import controller from './home.controller';
-// import template from './template.html';
+import './style.scss';
 
 export default {
   templateUrl: 'components/home/home.template.html',
