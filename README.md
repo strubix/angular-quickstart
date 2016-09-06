@@ -15,8 +15,12 @@ You'll need npm to initialize it.
 Feel free to rename the generated folder !
 
 ### Running dev server
-`npm run build` <br /><br />
+`npm run dev` <br /><br />
 Default server will run on _http://localhost:8080_ 
+
+### Building app
+`npm run build` <br /><br />
+Generated app will be created inside _dist_ folder
 
 ## Dependencies
 * angular

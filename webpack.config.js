@@ -6,13 +6,13 @@ var path = require('path');
 
 module.exports = {
   resolve: {
-    extensions: ['', '.js', '.css'],
+    extensions: ['', '.js', '.css', '.scss'],
     fallback: [path.join(__dirname, 'node_modules/')]
   },
   entry: {
     app: [
       path.join(__dirname, 'src/app.js'),
-      path.join(__dirname, 'src/app.css')
+      path.join(__dirname, 'src/app.scss')
     ]
   },
   output: {
@@ -35,6 +35,10 @@ module.exports = {
         loader: extractCSS.extract(['css'])
       },
       {
+        test: /\.scss$/,
+        loader: 'style!css!sass!sass-resources'
+      },
+      {
         test: /\.(mp4|mp3|avi|png|jpg|gif|svg|woff2?|eot|ttf)(\?.*)?$/,
         loader: 'file',
         query: {
@@ -54,5 +58,6 @@ module.exports = {
       template: path.join(__dirname, 'src/index.html'),
       inject: false
     })
-  ]
+  ],
+  sassResources: 'src/app.scss',
 };
