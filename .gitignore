@@ -1,6 +1,4 @@
 .gitignore
 .idea
-angular-quickstart.iml
 node_modules
-*.log
-dist/
+dist/*
